@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
@@ -20,15 +21,25 @@ public class Pathmaker : MonoBehaviour {
 	
 	public int Counter; 		// counter var will track how many floor tiles I've instantiated
 	public float RotateChance;
+	public List<Transform> FloorPrefabs = new List<Transform>();
 	public Transform FloorPrefab;
 	public Transform PathMakerSpherePrefab; 		// you'll have to make a "pathmakerSphere" prefab later
 
 
 	private int _directions;
-
 	void Start()
 	{
-		RotateChance = Random.Range(0.1f, 0.25f);
+//		if (LevelManager.Singleton.PathMaker.Contains(transform))
+//		{
+//			Destroy(gameObject);
+//			Debug.Log("3");
+//		}
+//		else
+//		{
+			LevelManager.Singleton.PathMaker.Add(transform);
+//		}
+		FloorPrefab = FloorPrefabs[Random.Range(0, FloorPrefabs.Count)];
+		RotateChance = Random.Range(0.05f, 0.2f);
 		Counter = Random.Range(200, 400);
 	}
 
@@ -41,9 +52,11 @@ public class Pathmaker : MonoBehaviour {
 
 		if (_directions >= 3)
 		{
+			LevelManager.Singleton.PathMaker.Remove(transform);
 			Destroy(gameObject);
+			Debug.Log("1");
 		}
-		if (Counter > 0 && LevelManager.Singleton.FloorCount < 500)
+		if (Counter > 0 && LevelManager.Singleton.FloorCount < LevelManager.Singleton.MaxCount)
 		{
 //			Instantiate a floorPrefab clone at current position;
 //			Move forward ("forward", as in, the direction I'm currently facing) by 5 units;
@@ -56,12 +69,24 @@ public class Pathmaker : MonoBehaviour {
 			transform.Translate(transform.forward * 5, Space.World);
 			Counter --;
 			LevelManager.Singleton.FloorCount ++;
-			LevelManager.Singleton.Floors.Add(newfloor.position);			
+			LevelManager.Singleton.Floors.Add(newfloor.position);
+			RegisterExtrenum(newfloor.position);
 		}
 		else
 		{
+			LevelManager.Singleton.PathMaker.Remove(transform);
 			Destroy(gameObject);
+			Debug.Log("2");
 		}
+	}
+
+	private void RegisterExtrenum(Vector3 newPos)
+	{
+		LevelManager.Singleton.MaxX = Mathf.Max(newPos.x, LevelManager.Singleton.MaxX);
+		LevelManager.Singleton.MaxZ = Mathf.Max(newPos.z, LevelManager.Singleton.MaxZ);
+		LevelManager.Singleton.MinX = Mathf.Min(newPos.x, LevelManager.Singleton.MinX);
+		LevelManager.Singleton.MinZ = Mathf.Min(newPos.z, LevelManager.Singleton.MinZ);
+
 	}
 
 
@@ -102,6 +127,7 @@ public class Pathmaker : MonoBehaviour {
 			}
 		}
 
+		_directions = 0;
 		return false;
 	}
 	

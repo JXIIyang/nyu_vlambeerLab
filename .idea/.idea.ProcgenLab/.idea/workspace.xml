@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8364a9f1-4660-4533-8ab3-acb8d3cd6a59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/FloorTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/FloorTile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProcgenLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProcgenLab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FLoorMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FLoorMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/PathMakerSphere.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/PathMakerSphere.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scenes/mainLabScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scenes/mainLabScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/LevelManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/scripts/Pathmaker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/Pathmaker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,69 +36,77 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1985" />
+          <entry key="cs" value="3602" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1985" />
+          <entry key="C#" value="3602" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/Pathmaker.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="261">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding>
-                <marker date="1553788968286" expanded="true" signature="6:191" ph="..." />
-                <marker date="1553788968286" expanded="true" signature="192:556" ph="/* MAZE PROC GEN LAB ... */" />
-                <marker date="1553788968286" expanded="true" signature="597:3060" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="600:773" ph="/* STEP 2: ============================================================================================ ... */" />
-                <marker date="1553788968286" expanded="true" signature="1064:1150" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="1168:2215" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="1170:1493" ph="/* Generate a random number from 0.0f to 1.0f; ... */" />
-                <marker date="1553788968286" expanded="true" signature="1518:1550" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="1612:2173" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="1617:1877" ph="/* Instantiate a floorPrefab clone at current position; ... */" />
-                <marker date="1553788968286" expanded="true" signature="2180:2212" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="2272:2853" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="2331:2382" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="2444:2496" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="2522:2610" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="2719:2848" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="2900:3055" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="2956:3035" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="3004:3031" ph="{...}" />
-                <marker date="1553788968286" expanded="true" signature="3061:3114" ph="/* end of class scope ... */" />
-                <marker date="1553788968286" expanded="true" signature="3119:3841" ph="/* STEP 3: ===================================================================================== ... */" />
-                <marker date="1553788968286" expanded="true" signature="3845:4243" ph="/* STEP 4: ====================================================================================== ... */" />
-                <marker date="1553788968286" expanded="true" signature="4247:4677" ph="/* STEP 5: =================================================================================== ... */" />
-                <marker date="1553788968286" expanded="true" signature="4681:5551" ph="/* STEP 6:  ===================================================================================== ... */" />
-                <marker date="1553788968286" expanded="true" signature="5555:6820" ph="/* OPTIONAL EXTRA TASKS TO DO, IF YOU WANT: =================================================== ... */" />
+                <marker date="1553806863059" expanded="true" signature="6:210" ph="..." />
+                <marker date="1553806863059" expanded="true" signature="211:575" ph="/* MAZE PROC GEN LAB ... */" />
+                <marker date="1553806863059" expanded="true" signature="616:4016" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="619:792" ph="/* STEP 2: ============================================================================================ ... */" />
+                <marker date="1553806863059" expanded="true" signature="1144:1491" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="1148:1283" ph="/* if (LevelManager.Singleton.PathMaker.Contains(transform)) ... */" />
+                <marker date="1553806863059" expanded="true" signature="1509:2769" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="1511:1834" ph="/* Generate a random number from 0.0f to 1.0f; ... */" />
+                <marker date="1553806863059" expanded="true" signature="1859:1965" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="2055:2653" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="2060:2320" ph="/* Instantiate a floorPrefab clone at current position; ... */" />
+                <marker date="1553806863059" expanded="true" signature="2660:2766" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="2817:3152" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3209:3790" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3268:3319" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3381:3433" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3459:3547" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3656:3785" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3837:4011" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3893:3972" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="3941:3968" ph="{...}" />
+                <marker date="1553806863059" expanded="true" signature="4017:4070" ph="/* end of class scope ... */" />
+                <marker date="1553806863059" expanded="true" signature="4075:4797" ph="/* STEP 3: ===================================================================================== ... */" />
+                <marker date="1553806863059" expanded="true" signature="4801:5199" ph="/* STEP 4: ====================================================================================== ... */" />
+                <marker date="1553806863059" expanded="true" signature="5203:5633" ph="/* STEP 5: =================================================================================== ... */" />
+                <marker date="1553806863059" expanded="true" signature="5637:6507" ph="/* STEP 6:  ===================================================================================== ... */" />
+                <marker date="1553806863059" expanded="true" signature="6511:7776" ph="/* OPTIONAL EXTRA TASKS TO DO, IF YOU WANT: =================================================== ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/LevelManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+            <state relative-caret-position="208">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
-                <marker date="1553788480477" expanded="false" signature="6:113" ph="..." />
-                <marker date="1553788480477" expanded="true" signature="157:853" ph="{...}" />
-                <marker date="1553788480477" expanded="true" signature="362:524" ph="{...}" />
-                <marker date="1553788480477" expanded="true" signature="399:449" ph="{...}" />
-                <marker date="1553788480477" expanded="true" signature="462:509" ph="{...}" />
-                <marker date="1553788480477" expanded="true" signature="542:554" ph="{...}" />
-                <marker date="1553788480477" expanded="true" signature="612:851" ph="{...}" />
-                <marker date="1553788480477" expanded="true" signature="619:675" ph="/* if (FloorCount &gt;= 500) ... */" />
-                <marker date="1553788480477" expanded="true" signature="716:845" ph="{...}" />
+                <marker date="1553807160752" expanded="false" signature="6:113" ph="..." />
+                <marker date="1553807160752" expanded="true" signature="157:2845" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="668:830" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="705:755" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="768:815" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="848:860" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="918:1761" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="1360:1585" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="1626:1755" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="1792:2843" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="2166:2809" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="2233:2329" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="2386:2482" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="2539:2635" ph="{...}" />
+                <marker date="1553807160752" expanded="true" signature="2692:2788" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -108,6 +117,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>debug.log</find>
+      <find>insta</find>
+      <find>destroy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,8 +132,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/scripts/ReloadScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/scripts/Pathmaker.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -211,12 +222,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553783242572</updated>
-      <workItem from="1553783245548" duration="5590000" />
+      <workItem from="1553783245548" duration="10639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5590000" />
+    <option name="totallyTimeSpent" value="10639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,54 +293,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/scripts/LevelManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/Pathmaker.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        <state relative-caret-position="261">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding>
-            <marker date="1553788480477" expanded="false" signature="6:113" ph="..." />
-            <marker date="1553788480477" expanded="true" signature="157:853" ph="{...}" />
-            <marker date="1553788480477" expanded="true" signature="362:524" ph="{...}" />
-            <marker date="1553788480477" expanded="true" signature="399:449" ph="{...}" />
-            <marker date="1553788480477" expanded="true" signature="462:509" ph="{...}" />
-            <marker date="1553788480477" expanded="true" signature="542:554" ph="{...}" />
-            <marker date="1553788480477" expanded="true" signature="612:851" ph="{...}" />
-            <marker date="1553788480477" expanded="true" signature="619:675" ph="/* if (FloorCount &gt;= 500) ... */" />
-            <marker date="1553788480477" expanded="true" signature="716:845" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="6:210" ph="..." />
+            <marker date="1553806863059" expanded="true" signature="211:575" ph="/* MAZE PROC GEN LAB ... */" />
+            <marker date="1553806863059" expanded="true" signature="616:4016" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="619:792" ph="/* STEP 2: ============================================================================================ ... */" />
+            <marker date="1553806863059" expanded="true" signature="1144:1491" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="1148:1283" ph="/* if (LevelManager.Singleton.PathMaker.Contains(transform)) ... */" />
+            <marker date="1553806863059" expanded="true" signature="1509:2769" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="1511:1834" ph="/* Generate a random number from 0.0f to 1.0f; ... */" />
+            <marker date="1553806863059" expanded="true" signature="1859:1965" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="2055:2653" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="2060:2320" ph="/* Instantiate a floorPrefab clone at current position; ... */" />
+            <marker date="1553806863059" expanded="true" signature="2660:2766" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="2817:3152" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3209:3790" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3268:3319" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3381:3433" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3459:3547" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3656:3785" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3837:4011" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3893:3972" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="3941:3968" ph="{...}" />
+            <marker date="1553806863059" expanded="true" signature="4017:4070" ph="/* end of class scope ... */" />
+            <marker date="1553806863059" expanded="true" signature="4075:4797" ph="/* STEP 3: ===================================================================================== ... */" />
+            <marker date="1553806863059" expanded="true" signature="4801:5199" ph="/* STEP 4: ====================================================================================== ... */" />
+            <marker date="1553806863059" expanded="true" signature="5203:5633" ph="/* STEP 5: =================================================================================== ... */" />
+            <marker date="1553806863059" expanded="true" signature="5637:6507" ph="/* STEP 6:  ===================================================================================== ... */" />
+            <marker date="1553806863059" expanded="true" signature="6511:7776" ph="/* OPTIONAL EXTRA TASKS TO DO, IF YOU WANT: =================================================== ... */" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/scripts/Pathmaker.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/LevelManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="208">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
-            <marker date="1553788968286" expanded="true" signature="6:191" ph="..." />
-            <marker date="1553788968286" expanded="true" signature="192:556" ph="/* MAZE PROC GEN LAB ... */" />
-            <marker date="1553788968286" expanded="true" signature="597:3060" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="600:773" ph="/* STEP 2: ============================================================================================ ... */" />
-            <marker date="1553788968286" expanded="true" signature="1064:1150" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="1168:2215" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="1170:1493" ph="/* Generate a random number from 0.0f to 1.0f; ... */" />
-            <marker date="1553788968286" expanded="true" signature="1518:1550" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="1612:2173" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="1617:1877" ph="/* Instantiate a floorPrefab clone at current position; ... */" />
-            <marker date="1553788968286" expanded="true" signature="2180:2212" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="2272:2853" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="2331:2382" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="2444:2496" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="2522:2610" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="2719:2848" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="2900:3055" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="2956:3035" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="3004:3031" ph="{...}" />
-            <marker date="1553788968286" expanded="true" signature="3061:3114" ph="/* end of class scope ... */" />
-            <marker date="1553788968286" expanded="true" signature="3119:3841" ph="/* STEP 3: ===================================================================================== ... */" />
-            <marker date="1553788968286" expanded="true" signature="3845:4243" ph="/* STEP 4: ====================================================================================== ... */" />
-            <marker date="1553788968286" expanded="true" signature="4247:4677" ph="/* STEP 5: =================================================================================== ... */" />
-            <marker date="1553788968286" expanded="true" signature="4681:5551" ph="/* STEP 6:  ===================================================================================== ... */" />
-            <marker date="1553788968286" expanded="true" signature="5555:6820" ph="/* OPTIONAL EXTRA TASKS TO DO, IF YOU WANT: =================================================== ... */" />
+            <marker date="1553807160752" expanded="false" signature="6:113" ph="..." />
+            <marker date="1553807160752" expanded="true" signature="157:2845" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="668:830" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="705:755" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="768:815" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="848:860" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="918:1761" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="1360:1585" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="1626:1755" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="1792:2843" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="2166:2809" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="2233:2329" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="2386:2482" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="2539:2635" ph="{...}" />
+            <marker date="1553807160752" expanded="true" signature="2692:2788" ph="{...}" />
           </folding>
         </state>
       </provider>
