@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
-
+using UnityEngine.Experimental.Rendering;
+using UnityEngine.SceneManagement;
 // MAZE PROC GEN LAB
 // all students: complete steps 1-6, as listed in this file
 // optional: if you have extra time, complete the "extra tasks" to do at the very bottom
@@ -15,25 +17,94 @@ public class Pathmaker : MonoBehaviour {
 // translate the pseudocode below
 
 //	DECLARE CLASS MEMBER VARIABLES:
-//	Declare a private integer called counter that starts at 0; 		// counter var will track how many floor tiles I've instantiated
-//	Declare a public Transform called floorPrefab, assign the prefab in inspector;
-//	Declare a public Transform called pathmakerSpherePrefab, assign the prefab in inspector; 		// you'll have to make a "pathmakerSphere" prefab later
+	
+	public int Counter; 		// counter var will track how many floor tiles I've instantiated
+	public float RotateChance;
+	public Transform FloorPrefab;
+	public Transform PathMakerSpherePrefab; 		// you'll have to make a "pathmakerSphere" prefab later
 
+
+	private int _directions;
+
+	void Start()
+	{
+		RotateChance = Random.Range(0.1f, 0.25f);
+		Counter = Random.Range(200, 400);
+	}
 
 	void Update () {
-//		If counter is less than 50, then:
 //			Generate a random number from 0.0f to 1.0f;
 //			If random number is less than 0.25f, then rotate myself 90 degrees;
 //				... Else if number is 0.25f-0.5f, then rotate myself -90 degrees;
 //				... Else if number is 0.99f-1.0f, then instantiate a pathmakerSpherePrefab clone at my current position;
 //			// end elseIf
 
+		if (_directions >= 3)
+		{
+			Destroy(gameObject);
+		}
+		if (Counter > 0 && LevelManager.Singleton.FloorCount < 500)
+		{
 //			Instantiate a floorPrefab clone at current position;
 //			Move forward ("forward", as in, the direction I'm currently facing) by 5 units;
 //			Increment counter;
 //		Else:
-//			Destroy my game object; 		// self destruct if I've made enough tiles already
+//			Destroy my game object; 		// self destruct if I've made enough tiles already		
+		
+			ChangeDirection();
+			Transform newfloor = Instantiate(FloorPrefab, transform.position, Quaternion.identity);
+			transform.Translate(transform.forward * 5, Space.World);
+			Counter --;
+			LevelManager.Singleton.FloorCount ++;
+			LevelManager.Singleton.Floors.Add(newfloor.position);			
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
 	}
+
+
+	private void ChangeDirection(float newBranch = 0.99f)
+	{
+		var index = Random.value;
+		if (index < RotateChance)
+		{
+			transform.Rotate(0, 90, 0, Space.Self);
+		}
+		else if (index >= RotateChance && index < RotateChance * 2)
+		{
+			transform.Rotate(0, -90, 0, Space.Self);
+		}
+		if (index >= newBranch)
+		{
+			Instantiate(PathMakerSpherePrefab, transform.position, Quaternion.identity);
+		}
+		var newPos = transform.position + transform.forward * 5;
+		while (CheckOverlap(newPos) && _directions < 3)
+		{
+			_directions++;
+			transform.Rotate(0, 90, 0, Space.Self);
+			newPos = transform.position + transform.forward * 5;
+			
+		}
+	
+	}
+
+
+	private bool CheckOverlap(Vector3 CheckPos)
+	{
+		foreach (var pos in LevelManager.Singleton.Floors)
+		{
+			if (Vector3.Distance(pos, CheckPos) < 5)
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+	
 
 } // end of class scope
 
